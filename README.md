@@ -20,6 +20,7 @@
 ```
 $ npm install --save react-toastify
 $ yarn add react-toastify
+$ bun add react-toastify
 ```
 
 ```jsx
