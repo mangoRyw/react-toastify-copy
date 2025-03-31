@@ -25,7 +25,7 @@ $ yarn add react-toastify
 ```jsx
   import React from 'react';
 
-  import { ToastContainer, toast } from 'react-toastify';
+  import { ToastContainer, toast, Bounce } from 'react-toastify';
   
   function App(){
     const notify = () => toast("Wow so easy!");
