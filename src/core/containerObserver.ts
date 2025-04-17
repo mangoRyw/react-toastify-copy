@@ -60,6 +60,9 @@ export function createContainerObserver(
     } else {
       const t = toasts.get(id);
       if (t) markAsRemoved(t);
+      const countBefore = queue.length;
+      queue = queue.filter(t => id !== t.props.toastId);
+      toastCount -= countBefore - queue.length;
     }
     notify();
   };
